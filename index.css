@@ -1,0 +1,64 @@
+:root{
+  --maroon:#8b0a17;
+  --text:#222;
+  --muted:#666;
+  --page-bg:#fbf9f8;
+  --container:1100px;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--page-bg);color:var(--text);font-size:16px}
+a{color:var(--maroon);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Topbar */
+header.topbar{
+  background:var(--maroon);
+  color:#fff;
+  padding:12px 20px;
+  position:sticky;
+  top:0;
+  z-index:30;
+  box-shadow:0 2px 0 rgba(0,0,0,0.05);
+}
+.topbar .wrap{max-width:var(--container);margin:0 auto;display:flex;align-items:center;gap:20px}
+.brand{font-weight:700;font-size:20px}
+nav.mainnav{margin-left:auto}
+nav.mainnav a{color:#fff;margin-left:18px;font-size:15px}
+
+/* Page grid */
+.wrap-page{max-width:var(--container);margin:26px auto;padding:0 20px;display:grid;grid-template-columns:320px 1fr;gap:40px}
+
+/* left column */
+.left-card{background:#fff;padding:18px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.photo{width:100%;height:220px;border-radius:4px;object-fit:cover;display:block}
+.left-meta{margin-top:12px;font-size:15px}
+.left-meta .name{font-weight:700;font-size:18px}
+.left-meta .small{font-size:13px;color:var(--muted);margin-top:6px}
+.left-meta .email{margin-top:8px}
+
+/* right column */
+.content{background:#fff;padding:28px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.content h1{margin:0;font-size:32px}
+.role{color:var(--muted);margin-top:10px}
+.section{margin-top:26px}
+.section h3{margin:0 0 12px 0;font-size:18px}
+.lead{line-height:1.6;color:#222}
+
+/* lists */
+.list-entry{display:flex;gap:18px;margin-bottom:12px}
+.list-entry .left{width:140px;color:var(--muted);font-size:14px}
+.list-entry .right{font-size:15px}
+
+/* utility */
+.muted{color:var(--muted)}
+.divider{height:1px;background:linear-gradient(90deg,transparent,#eee,transparent);margin:22px 0}
+
+/* responsive */
+@media (max-width:880px){
+  .wrap-page{grid-template-columns:1fr;padding:0 14px}
+  .left-card{order:2}
+  .content{order:1}
+  .photo{height:180px}
+  nav.mainnav{display:none}
+}
