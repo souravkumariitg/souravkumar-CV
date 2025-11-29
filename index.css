@@ -1,7 +1,7 @@
 :root{
   --maroon:#8b0a17;
   --text:#222;
-  --muted:#666;
+  --muted:#777474;
   --page-bg:#fbf9f8;
   --container:1100px;
   font-family: Georgia, 'Times New Roman', serif;
@@ -29,6 +29,25 @@ nav.mainnav a{color:#fff;margin-left:18px;font-size:15px}
 /* Page grid */
 .wrap-page{max-width:var(--container);margin:26px auto;padding:0 20px;display:grid;grid-template-columns:320px 1fr;gap:40px}
 
+.find{
+  margin-top: 12px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.icon{
+  margin-top: 5px;
+  display: flex;
+  gap: 50px;
+}
+.img1{
+  height: 35px;
+  width: 35px;
+  transition: 0.15s ease-in;
+}
+.img1:hover{
+transform: scale(1.2);
+}
+
 /* left column */
 .left-card{background:#fff;padding:18px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
 .photo{width:100%;height:220px;border-radius:4px;object-fit:cover;display:block}
@@ -50,15 +69,148 @@ nav.mainnav a{color:#fff;margin-left:18px;font-size:15px}
 .list-entry .left{width:140px;color:var(--muted);font-size:14px}
 .list-entry .right{font-size:15px}
 
+/*Research*/
+
+.super{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.first{
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+}
+.second{
+  margin: 0px;
+  font-size: 13px;
+
+}
+.section{
+  text-align: left;
+}
 /* utility */
 .muted{color:var(--muted)}
 .divider{height:1px;background:linear-gradient(90deg,transparent,#eee,transparent);margin:22px 0}
 
+.pdf-wrap{
+  width:100%;
+  max-width:900px;
+  margin-top:16px;
+  border-radius:6px;
+  overflow:hidden;
+  box-shadow:0 6px 18px rgba(0,0,0,0.06);
+}
+
+
+    .container{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    h1.section-title{
+      text-align: center;
+      margin: 6px 0 12px 0;
+      font-size: 20px;
+      letter-spacing: 0.4px;
+      font-weight: 700;
+    }
+
+    hr.section-divider{
+      border: none;
+      border-top: 2px solid #ddd;
+      margin-bottom: 18px;
+    }
+
+    /* --- Publication item layout --- */
+    .pub-item{
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 26px;
+      padding-bottom: 6px;
+      border-bottom: 0px solid transparent; /* keep spacing */
+    }
+
+    .pub-left{
+      max-width: calc(100% - 120px); /* leaves room for year on the right */
+    }
+
+    .pub-title{
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 600;
+      color: #111;
+      text-decoration: none;
+      transition: color 0.18s ease, text-decoration-color 0.18s ease;
+    }
+
+    /* Hover effect: blue and underline */
+    .pub-title:hover{
+      color: #0a62d1; /* blue */
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    .authors{
+      font-size: 14px;
+      color: #333;
+      margin-top: 6px;
+      font-style: normal;
+    }
+
+    .journal{
+      font-size: 13px;
+      color: #444;
+      margin-top: 6px;
+      font-style: italic;
+    }
+
+    .status{
+      margin-top: 6px;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .pub-year{
+      width: 90px;
+      flex: 0 0 90px;
+      text-align: right;
+      font-weight: 600;
+      color: #222;
+      font-size: 15px;
+      white-space: nowrap;
+    }
+
+    /* small link under title (if you want inline link instead of the whole title)
+       we are not using this, but keeps consistent spacing if needed */
+    .small-link{
+      display:block;
+      margin-top:6px;
+      font-size:13px;
+      color:#0a62d1;
+      text-decoration:none;
+    }
+
+  
 /* responsive */
-@media (max-width:880px){
+@media (max-width:80px){
   .wrap-page{grid-template-columns:1fr;padding:0 14px}
   .left-card{order:2}
   .content{order:1}
   .photo{height:180px}
   nav.mainnav{display:none}
+   .pub-item{
+        flex-direction: column;
+        gap: 8px;
+      }
+      .pub-year{
+        text-align: left;
+        width: auto;
+      }
+      .pub-left{ max-width: 100%; }
 }

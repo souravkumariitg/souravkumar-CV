@@ -1,97 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <header class="topbar">
-    <div class="wrap">
-      <div class="brand">Sourav kumar</div>
-      <nav class="mainnav">
-        <a href="#/home">Home</a>
-        <a href="#/research">Research</a>
-        <a href="#/people">People</a>
-        <a href="#/publications">Publications</a>
-        <a href="#/teaching">Teaching</a>
-        <a href="#/cv">Curriculum Vitae</a>
-        <a href="#/links">Links</a>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sourav Kumar</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="wrap">
+        <div class="brand">Sourav kumar</div>
+        <nav class="mainnav">
+          <a href="#/home">About Me</a>
+          <a href="#/research">Research</a>
+          <a href="#/publications">Publications</a>
+          <a href="#/cv">Curriculum Vitae</a>
+          <a href="#/links">Field Work</a>
+        </nav>
+      </div>
+    </header>
 
-  <main id="app">
-    <div class="wrap-page">
-      <!-- LEFT column (static) -->
-      <aside class="left-card">
-        <img src="saurabh.png" alt="Sourav kumar" class="photo"
-             onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'600\\' height=\\'300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23ddd\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%23888\\' font-size=\\'24\\'>profile.jpg not found</text></svg>'">
-        <div class="left-meta">
-          <div class="name">Sourav kumar</div>
-          <div class="muted">Assistant Professor</div>
-          <div class="muted small">Indian Institute of Technology, Guwahati</div>
-          <div class="email">Email: <a href="souravkumarxyz">iamsouravkumar</a></div>
+    <main id="app">
+      <div class="wrap-page">
+        <!-- LEFT column (static) -->
+        <aside class="left-card">
+          <img
+            src="/assets/saurabh.png"
+            alt="Sourav kumar"
+            class="photo"
+            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\\'http://www.w3.org/2000/svg\\' width=\\'600\\' height=\\'300\\'><rect width=\\'100%\\' height=\\'100%\\' fill=\\'%23ddd\\'/><text x=\\'50%\\' y=\\'50%\\' dominant-baseline=\\'middle\\' text-anchor=\\'middle\\' fill=\\'%23888\\' font-size=\\'24\\'>profile.jpg not found</text></svg>'"
+          />
+          <div class="left-meta">
+            <div class="name">Sourav kumar</div>
+            <div>Ph.D Candidate</div>
+            <div class="muted small">
+              Earth System Science and Engineering Division, Department of Civil
+              Engineering
+            </div>
+            <div class="">Indian Institute of Technology, Guwahati</div>
+            <div class="email">
+              Email:
+              <a href="souravkumarxyz">souravkumariitg@gmail.com</a> Contact:
+              <a href="contact">+91-9897492831</a>
+            </div>
+            <div class="find">Find Me Online:</div>
+            <div class="icon">
+              <a
+                href="https://scholar.google.co.in/citations?user=d9P9esgAAAAJ&hl=en&oi=ao"
+                target="_blank"
+              >
+                <img
+                  class="img1"
+                  src="assets/google scholar.jpg"
+                  alt="google me"
+                />
+              </a>
+              <a
+                href="https://www.researchgate.net/profile/Sourav-Kumar-15"
+                target="_blank"
+              >
+                <img class="img1" src="assets/earth.png" alt="researchgate" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/sourav-kumar-0437531a7/"
+                target="_blank"
+              >
+                <img class="img1" src="assets/linkedin.png" alt="linked In" />
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <section class="content" id="page-content">
+          <!-- JS injects page content here -->
+        </section>
+      </div>
+    </main>
+
+    <!-- Inline templates (fallback if you don't want separate /pages files) -->
+    <template id="tpl-home">
+      <div>
+        <h1>Sourav kumar</h1>
+        <div class="">Ph.D. Candidate</div>
+        <div class="role">Earth System Science and Engineering Division</div>
+        <div>Department of Civil Engineering</div>
+        <div class="email">Indian Institute of Technology, Guwahati</div>
+
+        <div class="section">
+          <h2>About Me</h2>
+          <p class="lead">
+            I'm particularly interested in earthquake physics. To understand how
+            earthquakes occur, I study the physical parameters that can affect
+            earthquake occurrence and the processes through which these
+            parameters operate. By integrating multidisciplinary approaches
+            across seismology, hydrology, and geodesy, I investigate problems
+            related to seismic activity, fault zone hydrogeological
+            architectures, induced seismicity, and crustal deformation of
+            earthquake cycles, both observationally and theoretically.
+          </p>
+          <p class="lead">
+            I am seeking self-motivated students with a strong interest in earth
+            science to join our research group. If you are interested, please
+            contact me at least three months before the annual application
+            deadline in August to discuss potential opportunities.
+          </p>
         </div>
-      </aside>
 
-      <section class="content" id="page-content">
-        <!-- JS injects page content here -->
-      </section>
-    </div>
-  </main>
+        <div class="section">
+          <h3>Education</h3>
+          <div class="list-entry">
+            <div class="left">2012-2016</div>
+            <div class="right">
+              B.Tech, Department of Civil Engineering, Uttaranchal University,
+              India
+            </div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2016-2018</div>
+            <div class="right">
+              M.Tech, Indian Institute of Technology, Guwahati
+            </div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2019-present</div>
+            <div class="right">
+              Ph.D, Indian Institute of Technology, Guwahati
+            </div>
+          </div>
+        </div>
 
-  <!-- Inline templates (fallback if you don't want separate /pages files) -->
-  <template id="tpl-home">
-    <div>
-      <h1>Sourav kumar</h1>
-      <div class="role">Assistant Professor</div>
-      <div class="email">Indian Institute of Technology, Guwahati</div>
+        <div class="section">
+          <h3>Honors,Awards,and Scholorships</h3>
+          <div class="list-entry">
+            <div class="left">2016</div>
+            <div class="bank">
+              <div class="right">​ 98.10 Percentile in 119873 Candidates</div>
+              <div class="short">
+                Graduate Aptitude Test in Engineering (GATE) 2016
+              </div>
+            </div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2016-2024</div>
+            <div class="bank">
+              <div class="right">
+                Ministry of Human Resources Development (MHRD) Fellowship
+              </div>
+              <div class="short">
+                Graduate Aptitude Test in Engineering (GATE) 2016
+              </div>
+            </div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2022-2023</div>
+            <div class="bank">
+              <div class="right">
+                ​ 2022-23 Fulbright-Nehru Doctoral Research Fellowship
+              </div>
+              <div class="short">
+                Worked as a Visiting Student Researcher at Department of Earth
+                and Planetary Science, University of California Berkeley, USA
+                (Sep 2022 - May 2023)
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="section">
-        <h3>Research Interests</h3>
-        <p class="lead">I'm particularly interested in earthquake physics. To understand how earthquakes occur, I study the physical parameters that can affect earthquake occurrence and the processes through which these parameters operate. By integrating multidisciplinary approaches across seismology, hydrology, and geodesy, I investigate problems related to seismic activity, fault zone hydrogeological architectures, induced seismicity, and crustal deformation of earthquake cycles, both observationally and theoretically.</p>
-        <p class="lead">I am seeking self-motivated students with a strong interest in earth science to join our research group. If you are interested, please contact me at least three months before the annual application deadline in August to discuss potential opportunities.</p>
+        <div class="section">
+          <h3>Teaching Experience</h3>
+          <div class="list-entry">
+            <div class="left">Teaching Assistant</div>
+            <div class="bank">
+              <div class="right">
+                ​ Indian Institute of Technology, Guwahati
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Position of Responsibility</h3>
+          <div class="list-entry">
+            <div class="left">2017-1024</div>
+            <div class="right">Captain, Cricket Team(IIT G)</div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2021-2022</div>
+            <div class="right">Welfare Secretary,Lohit Hostel(IIT G)</div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2017-2018</div>
+            <div class="right">General Secretary, Lohit Hostel(IIT G)</div>
+          </div>
+          <div class="list-entry">
+            <div class="left">2021</div>
+            <div class="right">General Secretary, Sports Board (IIT G)</div>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="tpl-research">
+      <div>
+        <h2>Research</h2>
+        <div class="section">
+          
+          <p class="lead">
+            Hydrogeology, Geochemical & Isotopic Tracers, Hydrologic Responses
+            to Earthquakes, Groundwater-Surface Water Interactions, Remote
+            Sensing & GIS, and Earth System Dynamics
+          </p>
+        </div>
+        <div class="section">
+          <h2>Academic Projects</h3>
+            <div class="project">
+            <h3>Ph.D Projects</h3>
+          <div>
+             Title: Basin-Scale Hydrogeochemistry and Earthquake-Induced Aquifer Modifications in the Brahmaputra River Basin, Northeast India
+           <div class="super">Supervisor: Late Prof. Chandan Mahanta and Dr. Archana M Nair
+           </div>
+          </div>
+          </div>
+
+          <div class="project">
+           <h3>M.Tech Projects</h3>
+          <div>
+             Title: Basin-Scale Hydrogeochemistry and Earthquake-Induced Aquifer Modifications in the Brahmaputra River Basin, Northeast India
+           <div class="super">Supervisor: Late Prof. Chandan Mahanta and Dr. Archana M Nair
+           </div>
+          </div>
+           </div>
+        </div>
+        
+          <div class="section">
+          <h2>Sponsored/Collaborative Research Projects</h3>
+            <div class="project">
+          <ol>
+            <div class="first">
+              <div> Physical and Mathematical River Modeling Study for Brahmani River Delta Rejuvenation
+            </div>
+            <div>2025-Present</div>
+              </div>
+            <pre class="second">
+Under MoU between IIT Guwahati and the Water Resources Department,
+Government of Odisha, India
+            </pre>
+            <p> Job:Contributing to flume-based modeling of bifurcation hydraulics and sediment dynamics, and preparing the project’s scientific report</p>
+          </ol>
+         
+          <ul>
+            <div class="first">
+              <div>  Study of Glacial Dynamics and Sustainable Hydrological Resources in Arunachal Himalaya
+            </div>
+            <div>2022</div>
+              </div>
+            <div class="second">
+          Funded by the Department of Science & Technology, Ministry of Science and Technology, Government of India
+            </div>
+            <p> Job: Led a basin-scale hydrogeochemical and isotopic investigation of the Brahmaputra River Basin, Northeast India
+</p>
+          </ul>
+         
+           </div>
+        </div>
       </div>
 
-      <div class="section">
-        <h3>Working Experience</h3>
-        <div class="list-entry"><div class="left">2018/10-present</div><div class="right">Assistant Professor, Geophysics, Peking University</div></div>
-        <div class="list-entry"><div class="left">2016/9 - 2018/10</div><div class="right">Postdoctoral Research Fellow, Miller Institute, UC Berkeley</div></div>
-        <div class="list-entry"><div class="left">2015/9 - 2016/9</div><div class="right">Postdoctoral researcher, UC Santa Cruz</div></div>
-      </div>
+    </template>
 
-      <div class="section">
-        <h3>Education</h3>
-        <div class="list-entry"><div class="left">2010-2015</div><div class="right">Ph.D., Geophysics, UC Santa Cruz</div></div>
-        <div class="list-entry"><div class="left">2007-2010</div><div class="right">M.S., Geophysics, Peking University</div></div>
-        <div class="list-entry"><div class="left">2003-2007</div><div class="right">B.S., Geophysics, Peking University</div></div>
-      </div>
-    </div>
-  </template>
+    <!-- more templates -->
 
-  <template id="tpl-research">
-    <div>
-      <h2>Research</h2>
-      <div class="section">
-        <h3>Projects & Interests</h3>
-        <p class="lead">Short descriptions of active projects, recent results, and links to datasets or code.</p>
-      </div>
-      <div class="section">
-        <h3>Selected Topics</h3>
-        <ul><li>Earthquake cycle modeling</li><li>Induced seismicity</li><li>Geodetic constraints</li></ul>
-      </div>
-    </div>
-  </template>
+    <template id="tpl-publications"
+      ><div class="container">
+    <h1 class="section-title">PUBLICATIONS AND CONFERENCES</h1>
+    <hr class="section-divider">
 
-  <!-- more templates -->
-  <template id="tpl-people"><div><h2>People</h2><div class="section"><p class="lead">Group members and collaborators.</p></div></div></template>
-  <template id="tpl-publications"><div><h2>Publications</h2><div class="section"><ol><li>Paper title, Journal (year)</li></ol></div></div></template>
-  <template id="tpl-teaching"><div><h2>Teaching</h2><div class="section"><p class="lead">Course list and notes.</p></div></div></template>
-  <template id="tpl-cv"><div><h2>Curriculum Vitae</h2><div class="section"><p class="lead"><a href="#">Download CV (PDF)</a></p></div></div></template>
-  <template id="tpl-links"><div><h2>Links</h2><div class="section"><ul><li><a href="#">GitHub</a></li></ul></div></div></template>
+    <!-- 1 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" target="_blank" rel="noopener">
+          Hydrogeochemical and Isotopic (δ²H and δ¹⁸O) Insights into Groundwater and Surface Water Systems of the Brahmaputra River Basin, Northeast India*
+        </a>
+        <div class="authors">Sourav Kumar, Madhusmita Nanda, Abhishek Dixit, Archana M Nair, Michael Manga</div>
+        <div class="journal">Journal of Hydrology: Regional Studies</div>
+        <div class="status">Under Review</div>
+      </div>
+      <div class="pub-year">2025</div>
+    </article>
 
-  <script src="script.js"></script>
-</body>
+    <!-- 2 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024GC011476?af=R" target="_blank" rel="noopener">
+          Water Geochemistry and Stable Isotope Changes Record Groundwater Mixing After a Regional Earthquake in Northeast India*
+        </a>
+        <div class="authors">Sourav Kumar, Michael Manga, Archana M Nair, Abhishek Dixit, Chandan Mahanta</div>
+        <div class="journal">Geochemistry, Geophysics, Geosystems</div>
+      </div>
+      <div class="pub-year">2024</div>
+    </article>
+
+    <!-- 3 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="https://agu.confex.com/agu/agu24/meetingapp.cgi/Paper/1641831" target="_blank" rel="noopener">
+          Hydrogeochemical Assessment of the Water Resources in the Brahmaputra River Basin, Northeast India
+        </a>
+        <div class="authors">Sourav Kumar, Michael Manga, Abhishek Dixit, Madhusmita Nanda, Suresh A. Kartha and Archana M Nair</div>
+        <div class="journal">AGU Fall Meeting 2024</div>
+      </div>
+      <div class="pub-year">2024</div>
+    </article>
+
+    <!-- 4 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="https://www.taylorfrancis.com/chapters/oa-edit/10.1201/9781003317395-60/mineralogical-elemental-composition-sediments-upper-siang-river-basin-northeastern-india-dixit-sathe-mahanta-kumar-chaudhuri" target="_blank" rel="noopener">
+          Mineralogical and Elemental Composition in Sediments of Upper Siang River Basin, Northeastern India*
+        </a>
+        <div class="authors">Abhishek Dixit, Sandip Sampat Sathe, Chandan Mahanta, Sourav Kumar, Sumantra Chaudhuri</div>
+        <div class="journal">Arsenic in the Environment: Bridging Science to Practice for Sustainable Development As2021</div>
+      </div>
+      <div class="pub-year">2023</div>
+    </article>
+
+    <!-- 5 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="https://link.springer.com/article/10.1007/s12524-022-01580-1" target="_blank" rel="noopener">
+          A Climate Zone Perspective on Spatiotemporal Variations in GRACE Derived Groundwater Storage (GWS) in India*
+        </a>
+        <div class="authors">Sourav Kumar, Ande Bhuvaneswari Devi, Dhritilekha Deka, Archana M Nair</div>
+        <div class="journal">Journal of the Indian Society of Remote Sensing</div>
+      </div>
+      <div class="pub-year">2022</div>
+    </article>
+
+    <!-- 6 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="https://agu.confex.com/agu/fm21/meetingapp.cgi/Paper/945068" target="_blank" rel="noopener">
+          Hydrogeochemical Changes in Response to Multiple Earthquakes in Northeast India
+        </a>
+        <div class="authors">Sourav Kumar, Abhishek Dixit, Archana M Nair, Chandan Mahanta, Ananya Bardhan</div>
+        <div class="journal">AGU Fall Meeting 2021</div>
+      </div>
+      <div class="pub-year">2021</div>
+    </article>
+
+    <!-- 7 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="https://essopenarchive.org/doi/full/10.1002/essoar.10509097.1" target="_blank" rel="noopener">
+          Application of Grain-Size End-Member Modelling in Bed Sediments of the Brahmaputra River
+        </a>
+        <div class="authors">Abhishek Dixit, Sourav Kumar, Chandan Mahanta, Sumantra Chaudhari, Manish Singh Rana</div>
+        <div class="journal">AGU Fall Meeting 2021</div>
+      </div>
+      <div class="pub-year">2021</div>
+    </article>
+
+    <!-- 8 -->
+    <article class="pub-item">
+      <div class="pub-left">
+        <a class="pub-title" href="/assets/Bhuvana_poster (1).pdf" target="_blank" rel="noopener">
+          A Study on Spatio-Temporal Variability in Groundwater Storage of India Using GRACE Data
+        </a>
+        <div class="authors">Ande Bhuvaneswari Devi, Sourav Kumar, Archana M Nair</div>
+        <div class="journal">AGU Fall Meeting 2019</div>
+      </div>
+      <div class="pub-year">2019</div>
+    </article>
+
+    <!-- Add more items by copying the article.pub-item block above and editing -->
+  </div></template
+    >
+   
+    >
+    <template id="tpl-cv">
+      <div>
+        <h2>Curriculum Vitae</h2>
+
+        <div class="section">
+          <p class="lead">
+            Download:
+            <a
+              href="/assets/CV_Sourav_Kumar_2025.pdf"
+              target="_blank"
+              rel="noopener"
+              >CV (PDF)</a
+            >
+          </p>
+        </div>
+
+        <div class="section">
+          <!-- PDF embed: width 100%, height adjustable -->
+          <div class="pdf-wrap">
+            <embed
+              src="/assets/CV_Sourav_Kumar_2025.pdf"
+              type="application/pdf"
+              width="100%"
+              height="700px"
+            />
+            <!-- fallback link if embed not supported -->
+            <p>
+              If the preview doesn't load,
+              <a
+                href="/assets/CV_Sourav_Kumar_2025.pdf"
+                target="_blank"
+                rel="noopener"
+                >click here to download the PDF</a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template id="tpl-links"
+      ><div>
+        <h2>Field Work</h2>
+        <div class="section">
+          <ul>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+        </div>
+      </div></template
+    >
+
+    <script src="script.js"></script>
+  </body>
 </html>

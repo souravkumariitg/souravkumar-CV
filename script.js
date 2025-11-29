@@ -37,7 +37,7 @@ function renderTemplateRoute(path) {
   target.appendChild(tpl.content.cloneNode(true));
   // Update title from first heading
   const heading = target.querySelector('h1, h2');
-  document.title = 'Saurabh kumar - '+ (heading ? heading.innerText : 'Profile') ;
+  document.title = 'Sourav Kumar - '+ (heading ? heading.innerText : 'Profile') ;
 }
 
 // --- (Alternative) Fetch-based router: load HTML fragment from /pages/<name>.html
