@@ -64,12 +64,166 @@ transform: scale(1.2);
 .section h3{margin:0 0 12px 0;font-size:18px}
 .lead{line-height:1.6;color:#222}
 
-/* lists */
-.list-entry{display:flex;gap:18px;margin-bottom:12px}
-.list-entry .left{width:140px;color:var(--muted);font-size:14px}
-.list-entry .right{font-size:15px}
+/* ---- Education Section ---- */
+.edu-entry {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.edu-year {
+  flex: 0 0 120px;
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+}
+
+.edu-content {
+  flex: 1;
+}
+
+.edu-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+}
+
+.edu-desc {
+  font-size: 14px;
+  color: #555;
+  margin-top: 4px;
+}
+
+/* ---- Positions of Responsibility ---- */
+.por-entry {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.por-year {
+  flex: 0 0 120px;
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+}
+
+.por-content {
+  flex: 1;
+}
+
+.por-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 700px) {
+  .edu-entry,
+  .por-entry {
+    flex-direction: column;
+  }
+
+  .edu-year,
+  .por-year {
+    flex: unset;
+  }
+}
+
+
+/* Honors / Awards layout fix */
+.award-entry {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.award-year {
+  flex: 0 0 120px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #444;
+}
+
+.award-content {
+  flex: 1;
+}
+
+.award-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #222;
+}
+
+.award-desc {
+  color: #555;
+  font-size: 14px;
+  margin-top: 4px;
+  line-height: 1.45;
+}
+
 
 /*Research*/
+/* --- Research page styles --- */
+.research-wrap{max-width:980px;margin:0 auto;padding:22px 20px 60px}
+.research-hero{text-align:left;margin-bottom:22px}
+.research-hero h1{font-size:36px;margin:0 0 6px;font-weight:700}
+.research-lead{color:#444;line-height:1.6;margin:0 0 18px;font-size:16px;max-width:820px}
+
+/* Section heading */
+.section-heading{
+  font-size:22px;
+  margin:20px 0 14px;
+  font-weight:700;
+  border-top:2px solid #e6e6e6;
+  padding-top:14px;
+  color:#222;
+}
+
+/* Project cards list */
+.project-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.project-card{
+  background:#fff;
+  border-radius:8px;
+  padding:18px;
+  box-shadow:0 8px 20px rgba(20,20,20,0.05);
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.project-card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(20,20,20,0.08)}
+.project-main .proj-title{margin:0;font-size:18px;color:#222;font-weight:700}
+.proj-sub{margin:8px 0 10px;color:#333;line-height:1.4}
+.proj-meta{list-style:none;padding:0;margin:0;color:#555;font-size:14px}
+.proj-meta li{margin:4px 0}
+
+/* Timeline style for sponsored projects */
+.timeline{margin-top:10px;display:flex;flex-direction:column;gap:16px}
+.tl-item{display:flex;gap:18px;align-items:flex-start}
+.tl-badge{
+  flex:0 0 140px;
+  text-align:right;
+  font-weight:700;
+  color:#444;
+  font-size:14px;
+  padding-top:6px;
+}
+.tl-body{
+  flex:1;
+  background:#fff;
+  padding:14px 16px;
+  border-radius:8px;
+  box-shadow:0 8px 20px rgba(20,20,20,0.04);
+}
+.tl-title{margin:0 0 8px;font-size:16px;color:#111;font-weight:700}
+.tl-sub{margin:0 0 8px;color:#444;font-size:14px}
+.tl-note{margin:0;color:#444;font-size:14px;line-height:1.5}
+
 
 .super{
   margin-top: 5px;
@@ -213,4 +367,16 @@ transform: scale(1.2);
         width: auto;
       }
       .pub-left{ max-width: 100%; }
+       .tl-item{flex-direction:column}
+  .tl-badge{text-align:left;flex:unset;padding:0 0 6px}
+  .project-list{grid-template-columns:1fr}
+  .edu-entry,
+  .por-entry {
+    flex-direction: column;
+  }
+
+  .edu-year,
+  .por-year {
+    flex: unset;
+  }
 }
