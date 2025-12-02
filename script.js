@@ -9,7 +9,7 @@ const routes = {
   '/research': { type: 'tpl', id: 'tpl-research' },
   '/people': { type: 'tpl', id: 'tpl-people' },
   '/publications': { type: 'tpl', id: 'tpl-publications' },
-  '/teaching': { type: 'tpl', id: 'tpl-teaching' },
+  
   '/cv': { type: 'tpl', id: 'tpl-cv' },
   '/links': { type: 'tpl', id: 'tpl-links' }
 };
