@@ -64,111 +64,10 @@ transform: scale(1.2);
 .section h3{margin:0 0 12px 0;font-size:18px}
 .lead{line-height:1.6;color:#222}
 
-/* ---- Education Section ---- */
-.edu-entry {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.edu-year {
-  flex: 0 0 120px;
-  font-weight: 600;
-  color: #444;
-  font-size: 15px;
-}
-
-.edu-content {
-  flex: 1;
-}
-
-.edu-title {
-  font-weight: 600;
-  font-size: 16px;
-  color: #222;
-}
-
-.edu-desc {
-  font-size: 14px;
-  color: #555;
-  margin-top: 4px;
-}
-
-/* ---- Positions of Responsibility ---- */
-.por-entry {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.por-year {
-  flex: 0 0 120px;
-  font-weight: 600;
-  color: #444;
-  font-size: 15px;
-}
-
-.por-content {
-  flex: 1;
-}
-
-.por-title {
-  font-size: 16px;
-  font-weight: 600;
-  color: #222;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 700px) {
-  .edu-entry,
-  .por-entry {
-    flex-direction: column;
-  }
-
-  .edu-year,
-  .por-year {
-    flex: unset;
-  }
-}
-
-
-/* Honors / Awards layout fix */
-.award-entry {
-  display: flex;
-  gap: 24px;
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #eee;
-}
-
-.award-year {
-  flex: 0 0 120px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #444;
-}
-
-.award-content {
-  flex: 1;
-}
-
-.award-title {
-  font-weight: 600;
-  font-size: 16px;
-  color: #222;
-}
-
-.award-desc {
-  color: #555;
-  font-size: 14px;
-  margin-top: 4px;
-  line-height: 1.45;
-}
-
+/* lists */
+.list-entry{display:flex;gap:18px;margin-bottom:12px}
+.list-entry .left{width:140px;color:var(--muted);font-size:14px}
+.list-entry .right{font-size:15px}
 
 /*Research*/
 /* --- Research page styles --- */
@@ -225,20 +124,19 @@ transform: scale(1.2);
 .tl-note{margin:0;color:#444;font-size:14px;line-height:1.5}
 
 
+
 .super{
   margin-top: 5px;
   margin-bottom: 10px;
   font-weight: 500;
 }
 .first{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
   text-align: left;
   display: flex;
   justify-content: space-between;
 }
 .second{
-  margin: 0px;
   font-size: 13px;
 
 }
@@ -258,99 +156,6 @@ transform: scale(1.2);
   box-shadow:0 6px 18px rgba(0,0,0,0.06);
 }
 
-
-    .container{
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 0 18px;
-    }
-
-    h1.section-title{
-      text-align: center;
-      margin: 6px 0 12px 0;
-      font-size: 20px;
-      letter-spacing: 0.4px;
-      font-weight: 700;
-    }
-
-    hr.section-divider{
-      border: none;
-      border-top: 2px solid #ddd;
-      margin-bottom: 18px;
-    }
-
-    /* --- Publication item layout --- */
-    .pub-item{
-      display: flex;
-      gap: 18px;
-      align-items: flex-start;
-      justify-content: space-between;
-      margin-bottom: 26px;
-      padding-bottom: 6px;
-      border-bottom: 0px solid transparent; /* keep spacing */
-    }
-
-    .pub-left{
-      max-width: calc(100% - 120px); /* leaves room for year on the right */
-    }
-
-    .pub-title{
-      display: inline-block;
-      font-size: 18px;
-      font-weight: 600;
-      color: #111;
-      text-decoration: none;
-      transition: color 0.18s ease, text-decoration-color 0.18s ease;
-    }
-
-    /* Hover effect: blue and underline */
-    .pub-title:hover{
-      color: #0a62d1; /* blue */
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-    }
-
-    .authors{
-      font-size: 14px;
-      color: #333;
-      margin-top: 6px;
-      font-style: normal;
-    }
-
-    .journal{
-      font-size: 13px;
-      color: #444;
-      margin-top: 6px;
-      font-style: italic;
-    }
-
-    .status{
-      margin-top: 6px;
-      font-size: 13px;
-      color: #666;
-    }
-
-    .pub-year{
-      width: 90px;
-      flex: 0 0 90px;
-      text-align: right;
-      font-weight: 600;
-      color: #222;
-      font-size: 15px;
-      white-space: nowrap;
-    }
-
-    /* small link under title (if you want inline link instead of the whole title)
-       we are not using this, but keeps consistent spacing if needed */
-    .small-link{
-      display:block;
-      margin-top:6px;
-      font-size:13px;
-      color:#0a62d1;
-      text-decoration:none;
-    }
-
-  
 /* responsive */
 @media (max-width:80px){
   .wrap-page{grid-template-columns:1fr;padding:0 14px}
@@ -358,25 +163,7 @@ transform: scale(1.2);
   .content{order:1}
   .photo{height:180px}
   nav.mainnav{display:none}
-   .pub-item{
-        flex-direction: column;
-        gap: 8px;
-      }
-      .pub-year{
-        text-align: left;
-        width: auto;
-      }
-      .pub-left{ max-width: 100%; }
-       .tl-item{flex-direction:column}
+   .tl-item{flex-direction:column}
   .tl-badge{text-align:left;flex:unset;padding:0 0 6px}
   .project-list{grid-template-columns:1fr}
-  .edu-entry,
-  .por-entry {
-    flex-direction: column;
-  }
-
-  .edu-year,
-  .por-year {
-    flex: unset;
-  }
 }
